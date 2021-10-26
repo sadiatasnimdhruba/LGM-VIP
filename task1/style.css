@@ -1,0 +1,374 @@
+header.masthead {
+        padding-top: 25rem;
+    padding-bottom: calc(8rem - 4.5rem);
+    background-image:  url(images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+     
+    }
+
+    .nav-link
+    {
+      color:#fff!important;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .nav-link:hover
+    {
+      color:#aeaeff!important;
+      text-decoration: underline;
+    }
+    .heading_top
+    {
+      
+      font-weight: bold;
+    }
+    .subheading_top
+    {
+      font-size:22px;
+      font-weight: 600;
+
+    }
+    .main
+    {
+       margin-left: 10%;
+    }
+    .icon
+    {
+      background-color: #33135e;
+      padding:10px;
+      border-radius: 50%;
+      width: 50%;
+      margin-left: 25%;
+      color:#fff;
+    }
+    hr
+    {
+      width:50%;
+      margin-left: 25%;
+    }
+    .nd,.project
+    {
+      transition: all 0.5s ease-in-out;
+    }
+    .nd:hover
+    {
+         background-color:#002cff4a;
+         height: 400px;
+         padding:10px;
+         border-radius:20px;
+         margin-bottom: 10px;
+         transition: all 0.5s ease-in-out;
+         
+    }
+
+    .project:hover
+    {
+      background-color:#002cff4a;
+      transition: all 0.5s ease-in-out;
+
+    }
+    .vl {
+  border-left: 4px solid green;
+  height: 120px;
+  position: absolute;
+  left: 41%;
+  margin-left: -3px;
+  top: 166em;
+}
+#life-in-zippy
+{
+  background-color: #909ebc;
+  
+
+}
+.life-in-zippy
+{
+  padding-left: 30%;
+}
+.carousel-control-next {
+    right: 47%;
+}
+.carousel-indicators {
+
+  right:45%;
+}
+#newsletter
+{
+    background-image: url(images/project1.jpg);
+}
+.contact-box
+{
+  padding:20px;
+  background-color: #adbefb;
+}
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.00rem;
+    width: 3.00rem;
+    background-color: #862823;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+footer{
+  background-color: #110032;
+  text-align: center;
+  
+
+}
+.footericon
+{
+    background-color: #212121;
+    color:#f5f6f7;
+    padding:2.5%;
+    border-radius: 50%;
+    margin:0 3.5%;
+     transition: all .2s ease-in-out;
+}
+.footericon:hover
+{
+    color: blue;
+    background-color:#fff;
+    transform: rotate(360deg) scale(1.5);
+}
+.so{
+  color:#ff726b;
+}
+.pricing-table-button
+{
+  margin-right:10%;
+}
+#scrollUp, #back-top {
+    background: #7c1fca;
+    height: 45px;
+    width: 45px;
+    right: 50px;
+    bottom: 18px;
+    position: fixed;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgb(90 90 90 / 70%)
+}
+@media screen and (max-width: 767px) {
+.mobile-space {margin-left%:2;}
+}
+@media screen and (max-width: 767px) {
+.slide {
+  width:100%;
+}
+header.masthead
+{
+  padding-top: 13rem;
+}
+}
+@media screen and (max-width: 767px) {
+.life-in-zippy {
+  padding-left: 0;
+}
+}
+@media screen and (max-width: 767px) {
+.carousel-indicators {
+  right:0;
+}
+}
+
+@media screen and (max-width: 767px) {
+.carousel-control-next {
+  right: 0;
+}
+.icon
+{
+  width:30%;
+  margin-left: 35%;
+}
+.demo
+{
+  height:60px;
+}
+}
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+ padding: 35px;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 50%;
+
+}
+.pricing-button
+{
+  transition: all 0.5s ease-in-out;
+
+}
+
+.pricing-button:hover
+{
+     width:100px;
+     height:50px;
+     font-size: 20px;
+     font-weight: bold;
+     background-color: #08026c;
+     color:#fff;
+     transition: all 0.5s ease-in-out;
+}
+.text
+{
+  margin-left: 18%;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 237rem;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 7.5%;
+  border-radius: 3px 0 0 3px;
+}
+@media screen and (max-width: 767px) {
+.prev,
+.next
+{
+  top:435rem;
+}
+.next
+{
+  right:3.8%;
+}
+.slide
+{
+  height:380px;
+}
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.blog-link {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.blog-link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.blog-link span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  
+}
+
+.blog-link:hover span {
+  padding-right: 25px;
+}
+
+.blog-link:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.blog-link:hover
+{
+  background-color: #08026c;
+  color:#fff;
+}

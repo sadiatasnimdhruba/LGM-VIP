@@ -76,7 +76,7 @@ header.masthead {
   position: absolute;
   left: 41%;
   margin-left: -3px;
-  top: 166em;
+  top: 205em;
 }
 #life-in-zippy
 {
@@ -160,7 +160,7 @@ footer{
     box-shadow: 0 0 10px 3px rgb(90 90 90 / 70%)
 }
 @media screen and (max-width: 767px) {
-.mobile-space {margin-left%:2;}
+.mobile-space {margin-left:2%;}
 }
 @media screen and (max-width: 767px) {
 .slide {
@@ -246,22 +246,22 @@ header.masthead
 }
 
 
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 237rem;
+  top: 275rem;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -273,7 +273,7 @@ header.masthead
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 7.5%;
   border-radius: 3px 0 0 3px;
@@ -282,7 +282,7 @@ header.masthead
 .prev,
 .next
 {
-  top:435rem;
+  top:485rem;
 }
 .next
 {
@@ -293,13 +293,13 @@ header.masthead
   height:380px;
 }
 }
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -308,7 +308,7 @@ header.masthead
   top: 0;
 }
 
-/* Container for image text */
+
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -322,13 +322,12 @@ header.masthead
   clear: both;
 }
 
-/* Six columns side by side */
+
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -372,3 +371,22 @@ header.masthead
   background-color: #08026c;
   color:#fff;
 }
+.video
+{
+  background-color: #909ebc;
+}
+iframe
+{
+  width:400px;
+  height:350px;
+}
+@media screen and (max-width: 767px) {
+iframe
+{
+  width: auto;
+  height: auto;
+}
+
+}
+
+

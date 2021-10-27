@@ -1,3 +1,4 @@
+/*styles for all the data*/
 .navbar
 {
     background-color:#0aeaf4;
@@ -19,8 +20,16 @@
     background-color:#a8efff;
     padding:5px;
     width:85%;
-    
+   
 }
+
+.data:hover{
+    transform: scale(1.1);
+    color:rgb(1, 1, 107);
+    
+   
+}
+
 @media screen and (max-width: 767px) {
     .desc{
         width:79%;

@@ -10,10 +10,9 @@ $sql="select students.*,class.name as classname
 $result=mysqli_query($conn,$sql);
 $data=mysqli_fetch_assoc($result);
 
-$sql1="select class.*,subject.name as subjectname,subject.id as subjectid
- from class
- join subject on class.id=subject.c_id
-  where class.id='$id'";
+$sql1="select class.*,subject.name as subjectname,subject.id as subjectid,students.id as student_id
+ from class,subject,students
+  where class.id=subject.c_id AND class.id=students.c_id AND students.id='$id'";
 
   $result1=mysqli_query($conn,$sql1);
 
@@ -40,7 +39,7 @@ $sql1="select class.*,subject.name as subjectname,subject.id as subjectid
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
-    <title>Website</title>
+    <title>SRMS</title>
     <style>
         .nav-pills .nav-link
         {
@@ -95,7 +94,7 @@ $sql1="select class.*,subject.name as subjectname,subject.id as subjectid
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="login.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="../index.php">Logout</a></li>
                     </ul>
                 </div>
             </div>

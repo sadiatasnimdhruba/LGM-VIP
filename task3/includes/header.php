@@ -17,7 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
-    <title>Website</title>
+    <title>SRMS</title>
     <style>
       .navbar-dark .navbar-nav .nav-link {
     color: rgb(255 255 255)!important;
@@ -60,11 +60,21 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="subject.php"> Subjects</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="view_exam.php"> Exams</a>
+         
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="view_exam.php">Exam</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="result.php">Graded result</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="ungraded_result.php">Ungraded result</a></li>
+          </ul>
         </li>
-         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="result.php"> Results</a>
+            <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="../index.php"> Logout</a>
         </li>
         
       </ul>

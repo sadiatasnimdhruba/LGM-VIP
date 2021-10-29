@@ -69,7 +69,7 @@ $data=mysqli_fetch_assoc($result);
           <form action="" method="POST">
        <div class="form-group" style="width:35%;">
               <label>Update marks :</label>
-              <input required type="text" class="form-control" name="marks" placeholder="Student name" value="<?php echo $data['marks']; ?>">
+              <input required type="number" class="form-control" name="marks" placeholder="Student name" value="<?php echo $data['marks']; ?>">
             </div>
         <br>
             <div class="form-group" style="width:35%;">

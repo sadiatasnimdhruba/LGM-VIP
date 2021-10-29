@@ -1,5 +1,5 @@
  <?php 
-
+session_start();
  include("../includes/header.php");
   include("../includes/db.php");
 
@@ -38,7 +38,7 @@ $data=mysqli_fetch_assoc($result);
   ?>
   <br><br><br><br>
 <div class="container">
-	<h1 class="text-center">All students</h1>
+	<h1 class="text-center">Particular exam</h1>
           <hr>
 
            <?php if(isset($_SESSION['success'])) { ?>

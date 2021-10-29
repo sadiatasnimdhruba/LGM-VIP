@@ -40,12 +40,19 @@ session_start();
         	<div class="col-5">
 	<h1 class="text-center">All subjects</h1>
 	<br><br> 
+  <?php if(isset($_SESSION['suc'])){?>
+          <div class="alert alert-success mt-5">
+            <strong>Sucessfully deleted the subject</strong>
+          </div>
+           <?php }?>
+
 	
           <table class="table">
             <thead>
               
               <th>Class</th>
               <th>Subject</th>
+              <th>Action</th>
              
             </thead>
             <tbody>
@@ -55,6 +62,9 @@ session_start();
               <tr>
               	<td><?php echo $row['classname']; ?></td>
                 <td><?php echo $row['name']; ?></td>
+                 <td class="text-center">
+                   <a class="btn btn-danger mb-2" onclick="return confirm('Are you sure?')" href="delete_subject.php?id=<?php echo $row['id'];?>"><i class="fa fa-trash"></i> Delete  </a>
+                 </td>
                 
 
               </tr>
@@ -106,3 +116,4 @@ session_start();
 
 
 <?php unset($_SESSION['success']); ?>
+<?php unset($_SESSION['suc']); ?>

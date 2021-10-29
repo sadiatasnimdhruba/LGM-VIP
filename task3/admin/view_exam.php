@@ -20,7 +20,9 @@ $result=mysqli_query($conn,$sql);
               <th>Roll</th>
               <th>Student name</th>
               <th>Subject</th>
-              <th class="text-center">Actions</th>
+              <th>Marks</th>
+              <th>Grade</th>
+              
             </thead>
             <tbody>
               <?php 
@@ -32,11 +34,9 @@ $result=mysqli_query($conn,$sql);
                 <td><?php echo $row['roll']?></td>
                 <td><?php echo $row['name']?></td>
                 <td><?php echo $row['subjectname']?></td>
-                <td class="text-center">
-                  <a class="btn btn-info mb-2" href="mark.php?id=<?php echo $row['id'];?>"><i class="fa fa-eye"></i>
-                  Mark</a>
-                
-                </td>
+                <td><?php echo $row['marks']?></td>
+                <td><?php echo $row['grade']?></td>
+               
 
               </tr>
 

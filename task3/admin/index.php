@@ -1,5 +1,5 @@
 <?php
-$url="http://localhost/lgm/task2/";
+$url="http://localhost/lgm/task3/";
 
 include("../includes/db.php");
 
@@ -18,7 +18,8 @@ include("../includes/db.php");
  $count_result=mysqli_query($conn,"SELECT * from exam where not (marks=0 AND grade='not graded')");
  $total_result=mysqli_num_rows($count_result);
 
-
+$count_ungraded_result=mysqli_query($conn,"SELECT * from exam where (marks=0 AND grade='not graded')");
+ $total_ungraded_result=mysqli_num_rows($count_ungraded_result);
 
 
  include("../includes/header.php");
@@ -174,6 +175,31 @@ color: #d30000!important;
         <a href="<?php echo $url; ?>admin/result.php">
         <div class="panel-footer bg-light p-2" style="color:#000;">
           <span class="pull-left">View all graded result</span>
+          <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+            <div class="clearfix"></div>
+
+        </div></a>
+      </div>
+    </div>
+
+
+     <div class="col-sm-4 mb-3">
+      <div class="panel">
+        <div class="panel-heading p-2">
+          <div class="row">
+            <div class="col-xs-3"><img src="<?php echo $url;?>images/result.png" width="100px" height="100px"  style="border-radius: 80%;">
+              <p class="pull-right" style="font-size: 45px"><?php echo $total_ungraded_result;?></p>
+            </div>
+            <div class="col-xs-9">
+              
+              <div class="clearfix"></div>
+              <div class="pull-right">All ungraded result</div>
+            </div>
+          </div>
+        </div>
+        <a href="<?php echo $url; ?>admin/ungraded_result.php">
+        <div class="panel-footer bg-light p-2" style="color:#000;">
+          <span class="pull-left">View all ungraded result</span>
           <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
             <div class="clearfix"></div>
 

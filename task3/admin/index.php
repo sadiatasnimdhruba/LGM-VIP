@@ -92,7 +92,7 @@ color: #d30000!important;
       <div class="panel">
         <div class="panel-heading p-2">
           <div class="row">
-            <div class="col-xs-3"><img src="<?php echo $url;?>images/class.png" width="100px" height="100px" style="border-radius: 80%;">
+            <div class="col-xs-3"><img src="../images/class.png" width="100px" height="100px" style="border-radius: 80%;">
               <p class="pull-right" style="font-size: 45px"><?php echo $total_class;?></p>
             </div>
             <div class="col-xs-9">
@@ -115,7 +115,7 @@ color: #d30000!important;
       <div class="panel">
         <div class="panel-heading p-2">
           <div class="row">
-            <div class="col-xs-3"><img src="<?php echo $url;?>images/subject.png" width="100px" height="100px">
+            <div class="col-xs-3"><img src="../images/subject.png" width="100px" height="100px">
               <p class="pull-right" style="font-size: 45px"><?php echo $total_subjects;?></p>
             </div>
             <div class="col-xs-9">
@@ -138,7 +138,7 @@ color: #d30000!important;
       <div class="panel">
         <div class="panel-heading p-2">
           <div class="row">
-            <div class="col-xs-3"><img src="<?php echo $url;?>images/exam.png" width="100px" height="100px"  style="border-radius: 80%;">
+            <div class="col-xs-3"><img src="../images/exam.png" width="100px" height="100px"  style="border-radius: 80%;">
               <p class="pull-right" style="font-size: 45px"><?php echo $total_exams;?></p>
             </div>
             <div class="col-xs-9">
@@ -148,7 +148,7 @@ color: #d30000!important;
             </div>
           </div>
         </div>
-        <a href="<?php echo $url; ?>admin/view_exam.php">
+        <a href="view_exam.php">
         <div class="panel-footer bg-light p-2" style="color:#000;">
           <span class="pull-left">View all exams</span>
           <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
@@ -162,7 +162,7 @@ color: #d30000!important;
       <div class="panel">
         <div class="panel-heading p-2">
           <div class="row">
-            <div class="col-xs-3"><img src="<?php echo $url;?>images/result.png" width="100px" height="100px"  style="border-radius: 80%;">
+            <div class="col-xs-3"><img src="../images/result.png" width="100px" height="100px"  style="border-radius: 80%;">
               <p class="pull-right" style="font-size: 45px"><?php echo $total_result;?></p>
             </div>
             <div class="col-xs-9">
@@ -172,7 +172,7 @@ color: #d30000!important;
             </div>
           </div>
         </div>
-        <a href="<?php echo $url; ?>admin/result.php">
+        <a href="result.php">
         <div class="panel-footer bg-light p-2" style="color:#000;">
           <span class="pull-left">View all graded result</span>
           <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
@@ -187,7 +187,7 @@ color: #d30000!important;
       <div class="panel">
         <div class="panel-heading p-2">
           <div class="row">
-            <div class="col-xs-3"><img src="<?php echo $url;?>images/result.png" width="100px" height="100px"  style="border-radius: 80%;">
+            <div class="col-xs-3"><img src="../images/result.png" width="100px" height="100px"  style="border-radius: 80%;">
               <p class="pull-right" style="font-size: 45px"><?php echo $total_ungraded_result;?></p>
             </div>
             <div class="col-xs-9">
@@ -197,7 +197,7 @@ color: #d30000!important;
             </div>
           </div>
         </div>
-        <a href="<?php echo $url; ?>admin/ungraded_result.php">
+        <a href="ungraded_result.php">
         <div class="panel-footer bg-light p-2" style="color:#000;">
           <span class="pull-left">View all ungraded result</span>
           <span class="pull-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
